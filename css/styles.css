@@ -284,11 +284,37 @@ nav h1 a {
 /*=================Responsive=========================== */
 @media screen and (max-width: 450px){
     .filter-options h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     }
     .filter-options{
-      height: 9vw;
+      height: 7vw;
     }
 
-}
+    .filter-options select{
+      font-size: 10;
+      height: 8vw;
+      letter-spacing: 0;
+      margin: 2vw;
+      padding: 0 10px;
+      width: 45%;
+      font-size: 13px;
+  }
+
+  #restaurant-list{
+    margin: 3vw;
+    padding: 9vw 5vw 5vw;
+  }
+
+  #restaurants-list li {
+    width: 80%;
+    padding: 1vw 3vw 3vw;
+    border: 1vw solid #ccc;
+  }
+  #restaurants-list li a{
+    margin: 5vw 14vw auto;
+    padding: 3vw 8vw 3vw;
+  }
+
+    }
+
