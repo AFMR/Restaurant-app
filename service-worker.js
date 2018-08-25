@@ -1,4 +1,4 @@
-/*var cacheVersion = 'V1';
+var cacheVersion = 'V1';
 var cacheFiles = [
     './',
     './css/styles.css',
