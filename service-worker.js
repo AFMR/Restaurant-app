@@ -47,6 +47,18 @@ self.addEventListener('activate', function(e){
 })
 
 self.addEventListener('fetch', function(e){
-    
-    console.log("Fetching", e.request.url)
+    console.log("Fetching", e.request.url);
+    e.respondWith(
+        caches.open('cacheVersion').then(function(cache){
+            return cache.match(e.request).then(function(response){
+                if (response){
+                    console.log('Fetching from cache');
+                }
+                return response || fetch(e.request).then(function(response){
+                    cache.put(e.request, response.clone());
+                    return response;
+                })
+            })
+        })
+    )
 })

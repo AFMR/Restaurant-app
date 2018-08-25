@@ -217,6 +217,11 @@ nav h1 a {
   width: 100%;
 }
 
+.main-restaurant-name{
+  text-align: center;
+  color: #f18200
+}
+
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -288,6 +293,8 @@ nav h1 a {
 
 /*=================  Responsive=========================== */
 @media screen and (min-width: 720px){
+
+
   nav{
     height: 7vw;
   }
@@ -304,6 +311,12 @@ nav h1 a {
     font-size: 2.5vw;
     height: 5vw;
     width: 30%;
+  }
+
+  .main-restaurant-name{
+    text-align: center;
+    color: #f18200;
+    font-size: 2.5vw;
   }
 
   #restaurants-list{
